@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coca-Cola Panel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+    }
+
+    .panel {
+      width: 160px;
+      height: 280px;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact {
+      background-color: white;
+      color: black;
+    }
+
+    .about {
+      background-color: #222;
+      color: white;
+    }
+
+    .panel .top-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .panel .top-btn:hover {
+      color: red;
+    }
+
+    .icon {
+      width: 70px;
+      height: auto;
+      margin: 0 auto 10px auto;
+    }
+
+    .btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 50px; /* bikin bulet */
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+    .btn:hover {
+      background-color: red;
+    }
+
+    .middle-img img {
+      width: 90px;
+      height: auto;
+    }
+
+    .middle-img {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 280px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="panel contact">
+      <button class="top-btn" onclick="location.href='contact.html'">CONTACT</button>
+      <img src="can1.jpg" class="icon" alt="coke" />
+      <button class="btn" onclick="location.href='kaleng1.html'">LEARN MORE</button>
+    </div>
+
+    <div class="panel about">
+      <button class="top-btn" onclick="location.href='about.html'">ABOUT</button>
+      <img src="can2.jpg" class="icon" alt="coke" />
+      <button class="btn" onclick="location.href='kaleng2.html'">LEARN MORE</button>
+    </div>
+  </div>
+</body>
+</html>
